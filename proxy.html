@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Proxy Site</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .search-input {
+        border-radius: 20px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        width: 300px;
+        box-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
+        background-color: #111;
+        color: white;
+      }
+
+      .search-button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .search-button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <input type="text" id="searchInput" class="search-input" placeholder="Enter a website URL">
+        <button id="searchButton" class="search-button">Go</button>
+      </div>
+    </div>
+    <script src="proxy.js"></script>
+  </body>
+</html>
